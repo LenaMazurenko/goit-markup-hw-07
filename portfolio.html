@@ -18,49 +18,48 @@
         <title>WebStudio</title>
     </head>
     <body>
-        <!--header-->
-        <header>
+         <!--header-->
+         <header>
             <div class="container header-wrapper">
-                <nav class="navbar">
+                <nav class="navbar-block">
                     <!-- logo in header -->
                     <a href="./index.html" class="logo"
-                        >Web<span class="logo-part-in-header">Studio</span></a
+                        >Web<span class="logo__part-in-header">Studio</span></a
                     >
 
                     <!-- navigation in header-->
                     <ul class="nav-in-header list">
-                        <li class="nav-in-header-element">
-                            <a href="./index.html">Студия</a>
+                        <li class="nav-in-header__element">
+                            <a href="./index.html" class="nav-in-header__link">Студия</a>
                         </li>
-                        <li class="nav-in-header-element">
-                            <a href="./portfolio.html" class="current"
-                                >Портфолио</a
-                            >
+                        <li class="nav-in-header__element">
+                            <a class="nav-in-header__link nav-in-header__link--current" href="./portfolio.html">Портфолио</a>
                         </li>
-                        <li class="nav-in-header-element">
-                            <a href="#">Контакты</a>
+                        <li class="nav-in-header__element">
+                            <a class="nav-in-header__link" href="#">Контакты</a>
                         </li>
                     </ul>
                 </nav>
+
                 <!-- contacts in header-->
-                <ul class="contact-in-header list">
-                    <li>
+                <ul class="contacts-in-header list">
+                    <li class="contacts-in-header__list-item">
                         <a
-                            class="contact-in-header-element"
+                            class="contacts-in-header__element"
                             href="mailto:info@devstudio.com"
                         >
-                            <svg width="16" height="12" class="icon-contact">
+                            <svg width="16" height="12" class="contacts-in-header__icon">
                                 <use href="./images/sprite.svg#envelope"></use>
                             </svg>
                             info@devstudio.com
                         </a>
                     </li>
-                    <li>
+                    <li class="contacts-in-header__list-item">
                         <a
-                            class="contact-in-header-element"
+                            class="contacts-in-header__element"
                             href="tel:+380961111111"
                         >
-                            <svg width="10" height="16" class="icon-contact">
+                            <svg width="10" height="16" class="contacts-in-header__icon">
                                 <use
                                     href="./images/sprite.svg#smartphone"
                                 ></use>
@@ -71,6 +70,7 @@
                 </ul>
             </div>
         </header>
+
 
         <!-- main -->
         <main>
