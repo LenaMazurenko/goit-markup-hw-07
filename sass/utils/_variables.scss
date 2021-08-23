@@ -1,0 +1,83 @@
+/*---------VARS-&-UTILS-------------*/
+$main-bg-color: #fff;
+$dark-bg-color: #2f303a;
+$button-bg-color: #f5f4fa;
+$active-color: #2196f3;
+$second-active-color: #188ce8;
+
+$main-text-color: #212121;
+$secondary-text-color: #757575;
+$white-text-color: #fff;
+
+$black-text-color: #000000;
+$contacts-header-text-color: rgba(255, 255, 255, 0.6);
+$icon-no-activ: #afb1b8;
+
+body{
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+}
+.list {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.flex-container {
+  display: flex;
+}
+.container-position {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.visualy-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  display: block;
+}
+.block-social-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 206px;
+  height: 44px;
+}
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
