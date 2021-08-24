@@ -10,11 +10,15 @@
   color: $main-text-color;
 }
 .clients-section__list {
-  @include flex-container_(space-between, center);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: nowrap;
 }
 .clients-section__link {
-  @include flex-container_();
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid $icon-no-activ-color;

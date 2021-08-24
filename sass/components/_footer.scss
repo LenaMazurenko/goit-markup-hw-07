@@ -2,6 +2,7 @@
 .footer {
   max-width: 1600px;
   margin: 0 auto;
+  
   background: $dark-bg-color;
 }
 
@@ -46,7 +47,7 @@
 .address-in-footer__element {
   .address-in-footer__link {
     @extend %footer-link-font;
-    color: $contacts-header-text-color;
+    color: $third-text-color;
  
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   };

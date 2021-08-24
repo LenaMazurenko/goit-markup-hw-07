@@ -42,14 +42,9 @@ p {
   margin: 0 auto;
   padding: 0 15px;
 }
-/*.flex-container {
+.flex-container {
   display: flex;
-}*/
-@mixin flex-container_($justify-content:center, $align-items: center) {
-  display: flex;
-  justify-content: $justify-content;
-  align-items: $align-items;
- }
+}
 .container-position {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -86,4 +81,28 @@ a {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+}
+.button {
+  font-family: inherit;
+  background-color: $active-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $white-text-color;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus{
+    background-color: $second-active-color;
+  }
 }

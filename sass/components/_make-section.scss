@@ -10,7 +10,6 @@
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
   color: $main-text-color;
 }
 .make-list {
@@ -18,16 +17,16 @@
 }
 .make-list__item {
   position: relative;
-}
-.make-list__item:not(:last-child) {
-  margin-right: 30px;
+  
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
-.make-list__list-portfolio__overlay-block {
+.make-list__overlay-block {
   display: flex;
   justify-content: center;
   align-items: center;
-
   position: absolute;
   width: 100%;
   height: 70px;
@@ -39,7 +38,6 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: $white-text-color;
