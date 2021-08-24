@@ -11,7 +11,7 @@
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-text-color);
+  color: $main-text-color;
 }
 .make-list {
   display: flex;
@@ -42,5 +42,5 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: var(--white-text-color);
+  color: $white-text-color;
 }

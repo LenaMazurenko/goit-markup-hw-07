@@ -19,8 +19,8 @@ body{
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
-  color: var(--main-text-color);
-  background-color: var(--main-bg-color);
+  color: $main-text-color;
+  background-color: $main-bg-color;
 }
 .list {
   list-style: none;

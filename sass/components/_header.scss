@@ -21,11 +21,11 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--active-color);
+  color: $active-color;
   text-decoration: none;
 }
 .logo__part-in-header {
-  color: var(--black-text-color);
+  color: $black-text-color;
 }
 
 /*-----nav in Header*/
@@ -46,15 +46,15 @@
   line-height: 1.14; /*16px*/
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--main-text-color);
+  color: $main-text-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-in-header__link:hover,
 .nav-in-header__link:focus {
-  color: var(--active-color);
+  color: $active-color;
 }
 .nav-in-header__link--current {
-  color: var(--active-color);
+  color: $active-color;
 }
 .nav-in-header__link--current::after {
   content: "";
@@ -65,7 +65,7 @@
   height: 4px;
   bottom: 0px;
 
-  background-color: var(--active-color);
+  background-color: $active-color;
   border-radius: 2px;
 }
 
@@ -88,7 +88,7 @@
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -101,9 +101,9 @@
 
 .contacts-in-header__element:hover,
 .contacts-in-header__element:focus {
-  color: var(--active-color);
+  color: $active-color;
 }
 .contacts-in-header__element:hover .contacts-in-header__icon,
 .contacts-in-header__element:focus .contacts-in-header__icon {
-  fill: var(--active-color);
+  fill: $active-color;
 }
