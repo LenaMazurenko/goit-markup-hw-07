@@ -7,33 +7,28 @@
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
   color: $main-text-color;
 }
 .clients-section__list {
-  display: flex;
+  @include flex-container_(space-between, center);
   flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
 }
 .clients-section__link {
-  display: flex;
+  @include flex-container_();
   width: 170px;
   height: 92px;
-  border: 1px solid $icon-no-activ;
+  border: 1px solid $icon-no-activ-color;
   border-radius: 4px;
-  align-items: center;
-  justify-content: center;
-  fill: $icon-no-activ;
+
+  fill: $icon-no-activ-color;
   cursor: pointer;
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
       fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients-section__link:hover,
-.clients-section__link:focus {
-  border: 1px solid $active-color;
-  fill: $active-color;
+  
+  &:hover, &:focus{
+    border: 1px solid $active-color;
+    fill: $active-color;
+  };
 }
 

@@ -10,46 +10,55 @@
   padding-top: 60px;
   padding-bottom: 60px;
   margin-right: 70px;
-  width: 231px;
 }
 
+/*-------------------*/
 .footer__logo {
   margin-bottom: 20px;
 }
-
 .logo__part-in-footer {
   color: $white-text-color;
 }
+
+/*-------------------*/
 .address-in-footer{
   display: block;
-  width: 231px;
 }
 .address-in-footer__list{
   font-style: normal;
+
+  li:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
-.address-in-footer__text > .address-in-footer__link {
+ %footer-link-font {
   line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: $white-text-color;
   text-decoration: none;
 }
+.address-in-footer__text {
+  .address-in-footer__link {
+    @extend %footer-link-font;
+    color: $white-text-color;
+  };
 
-.address-in-footer__element > .address-in-footer__link {
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: $contacts-header-text-color;
-  text-decoration: none;
+} 
+.address-in-footer__element {
+  .address-in-footer__link {
+    @extend %footer-link-font;
+    color: $contacts-header-text-color;
+ 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  };
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &:hover, 
+  &:focus{
+    .address-in-footer__link {
+      color: $active-color;
+    };
+  };
 
-.address-in-footer__list li:not(:last-child) {
-  margin-bottom: 9px;
-}
-.address-in-footer__element:hover .address-in-footer__link {
-  color: $active-color;
-}
+} 
 
 
 /*join-block-in-footer*/
@@ -64,7 +73,6 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $white-text-color;
 }
@@ -78,10 +86,10 @@
   fill: $white-text-color;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.join-block-in-footer .social-link:hover,
-.join-block-in-footer .social-link:focus {
-  background-color: $active-color;
+  &:hover,
+  &:focus{
+    background-color: $active-color;
+  }
 }
 
 
@@ -91,16 +99,10 @@
   padding-bottom: 94px;
 }
 .form-newsletter {
-  margin-top: 20px;
   display: flex;
+  margin-top: 20px;
 }
 .form-newsletter__input {
-  font-size: 16px;
-  line-height: 1.2;
-  align-items: center;
-  letter-spacing: 0.03em;
-  color: $white-text-color;
-
   padding: 15px 16px;
   margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -111,12 +113,19 @@
   width: 358px;
   background-color: $dark-bg-color;
   outline: none;
+
+  font-size: 16px;
+  line-height: 1.2;
+  align-items: center;
+  color: $white-text-color;
 }
 .form-newsletter__input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  color: $third-text-color;
 }
 .form-newsletter__button {
   display: flex;
+  align-items: center;
+
   position: relative;
   width: 200px;
   height: 50px;
@@ -126,22 +135,21 @@
   background-color: $active-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border: none;
-  cursor: pointer;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  align-items: center;
   letter-spacing: 0.06em;
   color: $white-text-color;
+  border: none;
+  cursor: pointer;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus{
+    background-color: $second-active-color;
+  }
 }
-.form-newsletter__button:hover,
-.form-newsletter__button:focus {
-  background-color: $second-active-color;
-}
+
 .form-newsletter__icon {
   position: absolute;
   top: 13px;

@@ -1,15 +1,13 @@
 
 /*-----block Advantages*/
-.homepage-advantages-list {
+.advantages-list {
   display: flex;
 }
-.homepage-advantages-list-item:not(:last-child) {
+.advantages-list__item:not(:last-child) {
   margin-right: 30px;
 }
-.block-icon-advantages {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.advantages-list__icons-block {
+  @include flex-container_();
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -17,18 +15,16 @@
   background-color: $button-bg-color;
   border-radius: 4px;
 }
-.homepage-advantages-element-title {
+.advantages-element__title {
   margin-bottom: 10px;
 
   font-size: inherit;
   font-weight: 700;
   line-height: 1.17;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $main-text-color;
 }
-.homepage-advantages-element-text {
+.advantages-element__text {
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: $secondary-text-color;
 }

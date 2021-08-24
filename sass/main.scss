@@ -1,10 +1,14 @@
 @import "utils/variables";
 @import "components/header";
-@import "components/home-page/hero-section";
-@import "components/home-page/advantages-section";
-@import "components/home-page/make-section";
-@import "components/home-page/ourteam-section";
-@import "components/home-page/clients-section";
-@import "components/portfolio-page/potfolio-section";
+@import "components/hero-section";
+@import "components/advantages-section";
+@import "components/make-section";
+@import "components/ourteam-section";
+@import "components/clients-section";
+@import "components/potfolio-section";
 @import "components/footer";
 @import "components/modal-window";
+body{
+  background-color: red;
+  font-size: black;
+}

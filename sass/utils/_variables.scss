@@ -8,10 +8,10 @@ $second-active-color: #188ce8;
 $main-text-color: #212121;
 $secondary-text-color: #757575;
 $white-text-color: #fff;
+$black-text-color: #000;
+$third-text-color: rgba(255, 255, 255, 0.6);
 
-$black-text-color: #000000;
-$contacts-header-text-color: rgba(255, 255, 255, 0.6);
-$icon-no-activ: #afb1b8;
+$icon-no-activ-color: #afb1b8;
 
 body{
   margin: 0;
@@ -19,6 +19,7 @@ body{
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
+  letter-spacing: 0.03em;
   color: $main-text-color;
   background-color: $main-bg-color;
 }
@@ -41,9 +42,14 @@ p {
   margin: 0 auto;
   padding: 0 15px;
 }
-.flex-container {
+/*.flex-container {
   display: flex;
-}
+}*/
+@mixin flex-container_($justify-content:center, $align-items: center) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+ }
 .container-position {
   padding-top: 94px;
   padding-bottom: 94px;
