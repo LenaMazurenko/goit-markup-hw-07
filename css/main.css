@@ -153,7 +153,7 @@ a {
   text-decoration: none;
 }
 
-.logo__part-in-header {
+.logo--part-in-header {
   color: #000;
 }
 
@@ -647,11 +647,11 @@ a {
 }
 
 /*-------------------*/
-.footer__logo {
+.logo__footer {
   margin-bottom: 20px;
 }
 
-.logo__part-in-footer {
+.logo--part-in-footer {
   color: #fff;
 }
 
