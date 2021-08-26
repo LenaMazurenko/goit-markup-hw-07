@@ -82,7 +82,7 @@ a {
   height: 44px;
   border-radius: 50%;
 }
-.button {
+%button {
   font-family: inherit;
   background-color: $active-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -105,4 +105,29 @@ a {
   &:focus{
     background-color: $second-active-color;
   }
+}
+@mixin flex-container($justify: flex-start, $align: stretch){
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+}
+@mixin position-container_top_left($pos, $t, $l, $h, $w) {
+  position: $pos;
+  top: $t;
+  left: $l;
+  height: $h;
+  width: $w;
+}
+@mixin position-container_top_right($pos, $t, $r, $h, $w) {
+  position: $pos;
+  top: $t;
+  right: $r;
+  height: $h;
+  width: $w;
+}
+@mixin position-container_bottom($pos, $b, $h, $w) {
+  position: $pos;
+bottom: $b;
+  height: $h;
+  width: $w;
 }

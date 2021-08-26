@@ -1,10 +1,6 @@
 /*------------MODAL-WINDOW----------*/
 .backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  @include position-container_top_left(fixed, 0, 0, 100vh, 100vw);
 
   background-color: rgba(0, 0, 0, 0.2);
 
@@ -22,12 +18,8 @@
 }
 
 .modal-window {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  @include position-container_top_left(absolute, 50%, 50%, 581px, 528px);
   padding: 40px;
-  height: 581px;
-  width: 528px;
 
   background-color: $main-bg-color;
 
@@ -37,14 +29,8 @@
       opasity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-window__btn-close {
-  display: flex;
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  top: 8px;
-  right: 8px;
-  justify-content: center;
-  align-items: center;
+  @include flex-container(center, center);
+  @include position-container_top_right(absolute, 8px, 8px, 30px, 30px);
   cursor: pointer;
   margin-left: auto;
 
@@ -180,6 +166,7 @@
 }
 
 .modal-window-form__button {
+  @extend %button;
   display: block;
   margin: 30px auto 0 auto;
   padding: 0;

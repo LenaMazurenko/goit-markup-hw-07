@@ -1,14 +1,12 @@
 /*-----block Advantages*/
 .advantages-list {
-  display: flex;
-}
+  @include flex-container();
+ }
 .advantages-list__item:not(:last-child) {
   margin-right: 30px;
 }
 .advantages-list__icons-block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-container(center, center);
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
